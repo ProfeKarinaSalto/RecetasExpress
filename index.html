@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>RecetaExpress</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🍽️ RecetaExpress<h1>
+
+<p>Guardá tus recetas favoritas</p>
+
+<form onsubmit="guardarReceta()">
+
+<input type="text" id="nombreReceta" placeholder="Nombre de la receta">
+
+<select>
+
+<option>Postres</option>
+<option>Pastas</option>
+<option>Comidas rápidas</option>
+
+</select>
+
+<input type="submit" value="Guardar">
+
+</form>
+
+<button onclick="mostrarReceta()">
+Ver recetas destacadas
+</button>
+
+<div id="mensaje"></div>
+
+<div id="recetas"></div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
